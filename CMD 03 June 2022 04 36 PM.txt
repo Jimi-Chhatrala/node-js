@@ -1,0 +1,769 @@
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS
+$ node
+Welcome to Node.js v16.15.0.
+Type ".help" for more information.
+> 5+5
+10
+> var a = "Hello"
+undefined
+> a
+'Hello'
+> a.toUpperCase()
+'HELLO'
+> window
+Uncaught ReferenceError: window is not defined
+> global
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  performance: Performance {
+    nodeTiming: PerformanceNodeTiming {
+      name: 'node',
+      entryType: 'node',
+      startTime: 0,
+      duration: 630898.7389000058,
+      nodeStart: 2.3758000135421753,
+      v8Start: 9.309400022029877,
+      bootstrapComplete: 127.07100003957748,
+      environment: 56.42750000953674,
+      loopStart: 520.5466000437737,
+      loopExit: -1,
+      idleTime: 629565.0106
+    },
+    timeOrigin: 1654253591345.503
+  },
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  a: 'Hello'
+}
+> document
+Uncaught ReferenceError: document is not defined
+> domain
+{
+  _stack: [
+    Domain {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      members: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kWeak)]: WeakReference {}
+    }
+  ],
+  Domain: [class Domain extends EventEmitter],
+  createDomain: [Function: createDomain],
+  create: [Function: createDomain],
+  active: Domain {
+    _events: [Object: null prototype] {
+      removeListener: [Function: updateExceptionCapture],
+      newListener: [Function: updateExceptionCapture],
+      error: [Function: debugDomainError]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    members: [],
+    [Symbol(kCapture)]: false,
+    [Symbol(kWeak)]: WeakReference {}
+  }
+}
+> process
+process {
+  version: 'v16.15.0',
+  versions: {
+    node: '16.15.0',
+    v8: '9.4.146.24-node.20',
+    uv: '1.43.0',
+    zlib: '1.2.11',
+    brotli: '1.0.9',
+    ares: '1.18.1',
+    modules: '93',
+    nghttp2: '1.47.0',
+    napi: '8',
+    llhttp: '6.0.4',
+    openssl: '1.1.1n+quic',
+    cldr: '40.0',
+    icu: '70.1',
+    tz: '2021a3',
+    unicode: '14.0',
+    ngtcp2: '0.1.0-DEV',
+    nghttp3: '0.1.0-DEV'
+  },
+  arch: 'x64',
+  platform: 'win32',
+  release: {
+    name: 'node',
+    lts: 'Gallium',
+    sourceUrl: 'https://nodejs.org/download/release/v16.15.0/node-
+v16.15.0.tar.gz',
+    headersUrl: 'https://nodejs.org/download/release/v16.15.0/node
+-v16.15.0-headers.tar.gz',
+    libUrl: 'https://nodejs.org/download/release/v16.15.0/win-x64/
+node.lib'
+  },
+  _rawDebug: [Function: _rawDebug],
+  moduleLoadList: [
+    'Internal Binding native_module',
+    'Internal Binding errors',
+    'NativeModule internal/errors',
+    'Internal Binding config',
+    'Internal Binding timers',
+    'Internal Binding async_wrap',
+    'Internal Binding constants',
+    'Internal Binding util',
+    'Internal Binding types',
+    'NativeModule internal/util',
+    'NativeModule internal/util/types',
+    'NativeModule internal/validators',
+    'NativeModule internal/promise_hooks',
+    'Internal Binding task_queue',
+    'Internal Binding symbols',
+    'NativeModule internal/async_hooks',
+    'NativeModule internal/linkedlist',
+    'NativeModule internal/priority_queue',
+    'NativeModule internal/assert',
+    'Internal Binding icu',
+    'NativeModule internal/util/inspect',
+    'NativeModule internal/util/debuglog',
+    'NativeModule internal/timers',
+    'NativeModule events',
+    'Internal Binding buffer',
+    'Internal Binding string_decoder',
+    'NativeModule internal/buffer',
+    'Internal Binding blob',
+    'NativeModule internal/encoding',
+    'Internal Binding messaging',
+    'NativeModule internal/worker/js_transferable',
+    'NativeModule internal/constants',
+    'NativeModule internal/blob',
+    'NativeModule buffer',
+    'NativeModule internal/modules/esm/handle_process_exit',
+    'Internal Binding process_methods',
+    'NativeModule internal/process/per_thread',
+    'Internal Binding credentials',
+    'NativeModule internal/process/promises',
+    'NativeModule internal/fixed_queue',
+    'NativeModule async_hooks',
+    'NativeModule internal/process/task_queues',
+    'Internal Binding trace_events',
+    'NativeModule internal/console/constructor',
+    'NativeModule internal/console/global',
+    'NativeModule internal/util/inspector',
+    'Internal Binding inspector',
+    'NativeModule internal/querystring',
+    'NativeModule path',
+    'NativeModule querystring',
+    'Internal Binding url',
+    'NativeModule internal/url',
+    'NativeModule util',
+    'Internal Binding performance',
+    'NativeModule internal/perf/utils',
+    'NativeModule internal/event_target',
+    'NativeModule timers',
+    'NativeModule internal/abort_controller',
+    'Internal Binding worker',
+    'NativeModule internal/streams/end-of-stream',
+    'NativeModule internal/streams/operators',
+    'NativeModule internal/streams/destroy',
+    'NativeModule internal/streams/legacy',
+    'NativeModule internal/streams/add-abort-signal',
+    'NativeModule internal/streams/buffer_list',
+    'NativeModule internal/streams/state',
+    'NativeModule string_decoder',
+    'NativeModule internal/streams/from',
+    'NativeModule internal/streams/readable',
+    'NativeModule internal/streams/writable',
+    'NativeModule internal/streams/duplex',
+    'NativeModule internal/streams/utils',
+    'NativeModule internal/streams/pipeline',
+    'NativeModule internal/streams/compose',
+    'NativeModule stream/promises',
+    'NativeModule internal/streams/transform',
+    'NativeModule internal/streams/passthrough',
+    'NativeModule stream',
+    'NativeModule internal/worker/io',
+    'NativeModule internal/perf/performance_entry',
+    'NativeModule internal/perf/observe',
+    'NativeModule internal/perf/nodetiming',
+    'NativeModule internal/perf/usertiming',
+    'NativeModule internal/perf/event_loop_utilization',
+    'NativeModule internal/histogram',
+    'NativeModule internal/perf/timerify',
+    'NativeModule internal/perf/performance',
+    'NativeModule internal/perf/event_loop_delay',
+    'NativeModule perf_hooks',
+    'NativeModule internal/process/execution',
+    'NativeModule internal/process/warning',
+    'Internal Binding fs',
+    'NativeModule internal/fs/utils',
+    'Internal Binding fs_dir',
+    'NativeModule internal/fs/dir',
+    'Internal Binding fs_event_wrap',
+    'Internal Binding uv',
+    'NativeModule internal/fs/watchers',
+    'NativeModule internal/fs/read_file_context',
+    'NativeModule fs',
+    ... 73 more items
+  ],
+  binding: [Function: binding],
+  _linkedBinding: [Function: _linkedBinding],
+  _events: [Object: null prototype] {
+    newListener: [ [Function: startListeningIfSignal], [Function (
+anonymous)] ],
+    removeListener: [ [Function: stopListeningIfSignal], [Function
+ (anonymous)] ],
+    warning: [Function: onWarning],
+    SIGWINCH: [Function (anonymous)]
+  },
+  _eventsCount: 4,
+  _maxListeners: undefined,
+  domain: [Getter/Setter],
+  _exiting: false,
+  config: [Getter/Setter],
+  dlopen: [Function: dlopen],
+  uptime: [Function: uptime],
+  _getActiveRequests: [Function: _getActiveRequests],
+  _getActiveHandles: [Function: _getActiveHandles],
+  getActiveResourcesInfo: [Function (anonymous)],
+  reallyExit: [Function: reallyExit],
+  _kill: [Function: _kill],
+  cpuUsage: [Function: cpuUsage],
+  resourceUsage: [Function: resourceUsage],
+  memoryUsage: [Function: memoryUsage] { rss: [Function: rss] },
+  kill: [Function: kill],
+  exit: [Function: exit],
+  hrtime: [Function: hrtime] { bigint: [Function: hrtimeBigInt] },
+  openStdin: [Function (anonymous)],
+  allowedNodeEnvironmentFlags: [Getter/Setter],
+  assert: [Function: deprecated],
+  features: {
+    inspector: true,
+    debug: false,
+    uv: true,
+    ipv6: true,
+    tls_alpn: true,
+    tls_sni: true,
+    tls_ocsp: true,
+    tls: true,
+    cached_builtins: [Getter]
+  },
+  _fatalException: [Function (anonymous)],
+  setUncaughtExceptionCaptureCallback: [Function (anonymous)],
+  hasUncaughtExceptionCaptureCallback: [Function: hasUncaughtExcep
+tionCaptureCallback],
+  emitWarning: [Function: emitWarning],
+  nextTick: [Function: nextTick],
+  _tickCallback: [Function: runNextTicks],
+  _debugProcess: [Function: _debugProcess],
+  _debugEnd: [Function: _debugEnd],
+  _startProfilerIdleNotifier: [Function (anonymous)],
+  _stopProfilerIdleNotifier: [Function (anonymous)],
+  stdout: [Getter],
+  stdin: [Getter],
+  stderr: [Getter],
+  abort: [Function: abort],
+  umask: [Function: wrappedUmask],
+  chdir: [Function (anonymous)],
+  cwd: [Function: wrappedCwd],
+  env: {
+    ACLOCAL_PATH: '/mingw64/share/aclocal:/usr/share/aclocal',
+    ALLUSERSPROFILE: 'C:\\ProgramData',
+    APPDATA: 'C:\\Users\\admin\\AppData\\Roaming',
+    COMMONPROGRAMFILES: 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Fi
+les',
+    CommonProgramW6432: 'C:\\Program Files\\Common Files',
+    COMPUTERNAME: 'DESKTOP-C924IAB',
+    COMSPEC: 'C:\\Windows\\system32\\cmd.exe',
+    CONFIG_SITE: '/etc/config.site',
+    DISPLAY: 'needs-to-be-defined',
+    DriverData: 'C:\\Windows\\System32\\Drivers\\DriverData',
+    EXEPATH: 'C:\\Program Files\\Git',
+    FPS_BROWSER_APP_PROFILE_STRING: 'Internet Explorer',
+    FPS_BROWSER_USER_PROFILE_STRING: 'Default',
+    HOME: 'C:\\Users\\admin',
+    HOMEDRIVE: 'C:',
+    HOMEPATH: '\\Users\\admin',
+    HOSTNAME: 'DESKTOP-C924IAB',
+    INFOPATH: '/usr/local/info:/usr/share/info:/usr/info:/share/in
+fo',
+    LC_CTYPE: 'en_US.UTF-8',
+    LOCALAPPDATA: 'C:\\Users\\admin\\AppData\\Local',
+    LOGONSERVER: '\\\\DESKTOP-C924IAB',
+    MANPATH: '/mingw64/local/man:/mingw64/share/man:/usr/local/man
+:/usr/share/man:/usr/man:/share/man',
+    MINGW_CHOST: 'x86_64-w64-mingw32',
+    MINGW_PACKAGE_PREFIX: 'mingw-w64-x86_64',
+    MINGW_PREFIX: '/mingw64',
+    MSYSTEM: 'MINGW64',
+    MSYSTEM_CARCH: 'x86_64',
+    MSYSTEM_CHOST: 'x86_64-w64-mingw32',
+    MSYSTEM_PREFIX: '/mingw64',
+    NUMBER_OF_PROCESSORS: '4',
+    OneDrive: 'C:\\Users\\admin\\OneDrive',
+    ORIGINAL_PATH: 'C:\\Program Files\\Git\\mingw64\\bin;C:\\Progr
+am Files\\Git\\usr\\bin;C:\\Users\\admin\\bin;C:\\Windows\\system3
+2;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\W
+indowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program
+Files\\dotnet;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cm
+d;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ad
+min\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppD
+ata\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\App
+Data\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Composer\\v
+endor\\bin',
+    ORIGINAL_TEMP: '/tmp',
+    ORIGINAL_TMP: '/tmp',
+    OS: 'Windows_NT',
+    PATH: 'C:\\Users\\admin\\bin;C:\\Program Files\\Git\\mingw64\\
+bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git
+\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git
+\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\admin\\
+bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;
+C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System
+32\\OpenSSH;C:\\Program Files\\dotnet;C:\\Program Files\\nodejs;C:
+\\Program Files\\Git\\cmd;D:\\xampp\\php;C:\\ProgramData\\Composer
+Setup\\bin;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApp
+s;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\b
+in;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppDa
+ta\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\usr\\bi
+n\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl',
+    PATHEXT: '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MS
+C',
+    PKG_CONFIG_PATH: '/mingw64/lib/pkgconfig:/mingw64/share/pkgcon
+fig',
+    PLINK_PROTOCOL: 'ssh',
+    PROCESSOR_ARCHITECTURE: 'AMD64',
+    PROCESSOR_IDENTIFIER: 'Intel64 Family 6 Model 69 Stepping 1, G
+enuineIntel',
+    PROCESSOR_LEVEL: '6',
+    PROCESSOR_REVISION: '4501',
+    ProgramData: 'C:\\ProgramData',
+    PROGRAMFILES: 'C:\\Program Files',
+    'ProgramFiles(x86)': 'C:\\Program Files (x86)',
+    ProgramW6432: 'C:\\Program Files',
+    PS1: '\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\
+u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__
+git_ps1`\\[\\033[0m\\]\\n$ ',
+    PSModulePath: 'C:\\Program Files\\WindowsPowerShell\\Modules;C
+:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    PUBLIC: 'C:\\Users\\Public',
+    PWD: '/d/xampp/htdocs/AndrewMead/NodeJS',
+    SESSIONNAME: 'Console',
+    SHELL: 'C:\\Program Files\\Git\\usr\\bin\\bash.exe',
+    SHLVL: '1',
+    SSH_ASKPASS: '/mingw64/bin/git-askpass.exe',
+    SynaProgDir: 'Synaptics\\SynTP',
+    SYSTEMDRIVE: 'C:',
+    SYSTEMROOT: 'C:\\Windows',
+    TEMP: 'C:\\Users\\admin\\AppData\\Local\\Temp',
+    TERM_PROGRAM: 'mintty',
+    TERM_PROGRAM_VERSION: '3.6.1',
+    TMP: 'C:\\Users\\admin\\AppData\\Local\\Temp',
+    TMPDIR: 'C:\\Users\\admin\\AppData\\Local\\Temp',
+    USERDOMAIN: 'DESKTOP-C924IAB',
+    USERDOMAIN_ROAMINGPROFILE: 'DESKTOP-C924IAB',
+    USERNAME: 'admin',
+    USERPROFILE: 'C:\\Users\\admin',
+    WINDIR: 'C:\\Windows',
+    _: '/usr/bin/winpty'
+  },
+  title: ' ',
+  argv: [ 'C:\\Program Files\\nodejs\\node.exe' ],
+  execArgv: [],
+  pid: 5184,
+  ppid: 7452,
+  execPath: 'C:\\Program Files\\nodejs\\node.exe',
+  debugPort: 9229,
+  argv0: 'C:/Program Files/nodejs/node.exe',
+  _preload_modules: [],
+  report: [Getter],
+  setSourceMapsEnabled: [Function: setSourceMapsEnabled],
+  [Symbol(kCapture)]: false
+}
+> exit
+Uncaught ReferenceError: exit is not defined
+> process.exit()
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS
+$
+
+
+
+*****************************************************
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/no
+$ node app.js
+utils.js
+Jimi
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+utils.js
+2
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+utils.js
+notes.js
+Your notes...
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (notes-app)
+version: (1.0.0)
+description:
+entry point: (app.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to D:\xampp\htdocs\AndrewMead\NodeJS\node-course\notes-app\package.json:
+
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i validator@10.8.0
+
+added 1 package, and audited 2 packages in 3s
+
+1 moderate severity vulnerability
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+true
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+false
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+true
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+false
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'validator'
+Require stack:
+- D:\xampp\htdocs\AndrewMead\NodeJS\node-course\notes-app\app.js
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Module.require (node:internal/modules/cjs/loader:1005:
+19)←[39m
+←[90m    at require (node:internal/modules/cjs/helpers:102:18)←[39
+m
+    at Object.<anonymous> (D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\notes-app\app.js:1:19)
+←[90m    at Module._compile (node:internal/modules/cjs/loader:1105
+:14)←[39m
+←[90m    at Object.Module._extensions..js (node:internal/modules/c
+js/loader:1159:10)←[39m
+←[90m    at Module.load (node:internal/modules/cjs/loader:981:32)←
+[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:822:12)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: [
+    ←[32m'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\note
+s-app\\app.js'←[39m
+  ]
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm install
+
+added 1 package, and audited 2 packages in 2s
+
+1 moderate severity vulnerability
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+false
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i chalk@2.4.1
+
+added 7 packages, and audited 9 packages in 3s
+
+1 moderate severity vulnerability
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+green
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+green
+green
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i nodemon@1.18.5 -g
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+
+added 230 packages, and audited 231 packages in 22s
+
+2 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ nodemon -v
+1.18.5
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+Success!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ nodemon app.js
+[nodemon] 1.18.5
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+[nodemon] clean exit - waiting for changes before restart
+rs
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+[nodemon] clean exit - waiting for changes before restart
+
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+Success!
+Error!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ nodemon app.js
+[nodemon] 1.18.5
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+[nodemon] clean exit - waiting for changes before restart
+
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i nodemon@2.0.16 -g
+
+added 37 packages, removed 151 packages, changed 79 packages, and audited 117 packages in 12s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+Success!
+Error!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ nodemon app.js
+[nodemon] 2.0.16
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+Warning!
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Success!
+Success!
+Success!
+Success!
+Error!
+Warning!
+[nodemon] clean exit - waiting for changes before restart
+
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+Success!
+Success!
+Success!
+Success!
+Error!
+Warning!
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$
+
+
+*****************************************************
+
+*****************************************************
+
+*****************************************************
+
+*****************************************************
+
+*****************************************************
+
+*****************************************************
+
+*****************************************************
+

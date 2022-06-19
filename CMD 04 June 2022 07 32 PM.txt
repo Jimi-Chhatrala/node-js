@@ -1,0 +1,377 @@
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS
+$ cd node-course/
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ cd notes-app/
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js Jimi
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'Jimi'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js Jimi
+Jimi
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+add
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+remove
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+Nothing to show
+remove
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+Nothing to show
+remove
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="This is a title"
+Nothing to show
+add
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="This is a title"
+Nothing to show
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'add',
+  '--title=This is a title'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+Nothing to show
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'remove'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'remove'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'remove'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'remove'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'add'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+Adding notes
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js',
+  'add'
+]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+Removing Notes
+remove
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i yargs@12.0.2
+
+added 56 packages, and audited 65 packages in 18s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+3 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ npm i yargs@12.0.2
+
+up to date, audited 65 packages in 2s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+3 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-course\\notes-app\\
+app.js'
+]
+{ _: [], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Things to buy"
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-co
+urse\\notes-app\\app.js',
+  'add',
+  '--title=Things to buy'
+]
+{ _: [ 'add' ], title: 'Things to buy', '$0': 'ap
+p.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --help
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'D:\\xampp\\htdocs\\AndrewMead\\NodeJS\\node-co
+urse\\notes-app\\app.js',
+  '--help'
+]
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --version
+1.0.0
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --version
+1.1.0
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --help
+app.js [command]
+
+Commands:
+  app.js add  Add a new note
+
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+Adding a new Notes!!
+{ _: [ 'add' ], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js remove
+Remove the notes!!
+{ _: [ 'remove' ], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --help
+app.js [command]
+
+Commands:
+  app.js add     Add a new note
+  app.js remove  Remove a note
+
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js --help
+app.js [command]
+
+Commands:
+  app.js add     Add a new note
+  app.js remove  Remove a note
+  app.js list    Display the list
+  app.js read    Read the list
+
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js list
+Displaying out the list items!!
+{ _: [ 'list' ], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js read
+Reading out the list items!!
+{ _: [ 'read' ], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+Adding a new Notes!! { _: [ 'add' ], title: 'Shop
+ping list', '$0': 'app.js' }
+{ _: [ 'add' ], title: 'Shopping list', '$0': 'ap
+p.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+Adding a new Notes!! { _: [ 'add' ], '$0': 'app.j
+s' }
+{ _: [ 'add' ], '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add
+app.js add
+
+Add a new note
+
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+  --title    Note title                [required]
+
+Missing required argument: title
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add "Shopping list"
+app.js add
+
+Add a new note
+
+Options:
+  --help     Show help                  [boolean]
+  --version  Show version number        [boolean]
+  --title    Note title                [required]
+
+Missing required argument: title
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+Adding a new Notes!! { _: [ 'add' ], title: 'Shop
+ping list', '$0': 'app.js' }
+{ _: [ 'add' ], title: 'Shopping list', '$0': 'ap
+p.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title=""
+Adding a new Notes!! { _: [ 'add' ], title: '', '
+$0': 'app.js' }
+{ _: [ 'add' ], title: '', '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title
+Adding a new Notes!! { _: [ 'add' ], title: true,
+ '$0': 'app.js' }
+{ _: [ 'add' ], title: true, '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title
+Adding a new Notes!! { _: [ 'add' ], title: '', '
+$0': 'app.js' }
+{ _: [ 'add' ], title: '', '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+
+Adding a new Notes!! { _: [ 'add' ], title: 'Shop
+ping list', '$0': 'app.js' }
+{ _: [ 'add' ], title: 'Shopping list', '$0': 'ap
+p.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title=2
+Adding a new Notes!! { _: [ 'add' ], title: '2',
+'$0': 'app.js' }
+{ _: [ 'add' ], title: '2', '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+Adding a new Notes!! { _: [ 'add' ], title: 'Shop
+ping list', '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+Adding a new Notes!! { _: [ 'add' ], title: 'Shop
+ping list', '$0': 'app.js' }
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+Title:Shopping list
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list"
+app.js add
+
+Add a new note
+
+Options:
+  --help         Show help              [boolean]
+  --version      Show version number    [boolean]
+  --title        Note title   [string] [required]
+  --description  Note description
+                              [string] [required]
+
+Missing required argument: description
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js add --title="Shopping list" --description="10 items to buy"
+Title:Shopping list
+Description: 10 items to buy
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$

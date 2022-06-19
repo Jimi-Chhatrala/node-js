@@ -1,0 +1,137 @@
+> exit
+Uncaught ReferenceError: exit is not defined
+> process.exit()
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS
+$ cd
+CMD 03 June 2022 04 36 PM.txt  node-course/
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS
+$ cd node-course/
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node hello.js
+Welcome to the class
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node
+Welcome to Node.js v16.15.0.
+Type ".help" for more information.
+> hello.js
+Uncaught ReferenceError: hello is not defined
+> process.exit()
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\app.js'
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m
+←[90m    at node:internal/main/run_main_module:17:47←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: []
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\app.js'
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m
+←[90m    at node:internal/main/run_main_module:17:47←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: []
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\app.js'
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m
+←[90m    at node:internal/main/run_main_module:17:47←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: []
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\app.js'
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m
+←[90m    at node:internal/main/run_main_module:17:47←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: []
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ node app.js
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\xampp\htdocs\AndrewMead\NodeJS\node-
+course\app.js'
+←[90m    at Function.Module._resolveFilename (node:internal/module
+s/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loade
+r:778:27)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:inte
+rnal/modules/run_main:77:12)←[39m
+←[90m    at node:internal/main/run_main_module:17:47←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: []
+}
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course
+$ cd notes-app/
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$ node app.js
+utils.js
+Jimi
+
+admin@DESKTOP-C924IAB MINGW64 /d/xampp/htdocs/AndrewMead/NodeJS/node-course/notes-app
+$
