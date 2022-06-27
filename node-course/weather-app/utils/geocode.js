@@ -5,14 +5,14 @@ const geocode = (address, callback) => {
     address
   )}&limit=1`;
 
-  request({ url: url, json: true }, (error, response) => {
+  request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback("Unable to connect to location services!", undefined);
     } else {
       callback(undefined, {
-        latitude: response.body.data[0].latitude,
-        longitude: response.body.data[0].longitude,
-        location: response.body.data[0].label,
+        latitude: body.data[0].latitude,
+        longitude: body.data[0].longitude,
+        location: body.data[0].label,
       });
     }
   });
