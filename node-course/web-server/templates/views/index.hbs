@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/app.js"></script>
-    <title>Document</title>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
   </head>
   <body>
+    <div class="main-content">
     {{>header}}
+      <p>
+        Use this site to get your weather!
+      </p>
+    </div>
+    {{>footer}}
+
+{{!-- https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png --}}
     {{!-- <h1>{{title}}</h1> --}}
     {{!-- <p>Created by {{name}}</p> --}}
-    {{>footer}}
 
   </body>
 </html>
