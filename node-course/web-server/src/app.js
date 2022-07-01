@@ -1,10 +1,11 @@
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+const app = express();
+
 // console.log(__dirname);
 // console.log(path.join(__dirname, "../public"));
 // console.log(__filename);
-const app = express();
 
 // Define path for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -17,6 +18,8 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
 // setup static directory to serve
+app.use(express.static(publicDirectoryPath));
+
 app.get("", (req, res) => {
   res.render("index", {
     title: "Index Page",
@@ -38,7 +41,28 @@ app.get("/help", (req, res) => {
   });
 });
 
-app.use(express.static(publicDirectoryPath));
+app.get("/help/*", (req, res) => {
+  // res.send("404 : Help Article Not Found !!");
+  res.render("404", {
+    title: "404",
+    name: "Jimi Chhatrala",
+    errorMessage: "Help article not found",
+  });
+});
+
+app.get("*", (req, res) => {
+  // res.send("404 : Page Not Found !!");
+  res.render("404", {
+    title: "404",
+    name: "Jimi Chhatrala",
+    errorMessage: "Page Not Found",
+  });
+});
+
+// Handling non matching request from the client
+// app.use((req, res, next) => {
+//   res.status(404).send("<h1>Page not found on the server</h1>");
+// });
 
 // app.get("", (req, res) => {
 //   res.send("<h1>Hello Express</h1>");
