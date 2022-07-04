@@ -3,6 +3,9 @@ const express = require("express");
 const hbs = require("hbs");
 const app = express();
 
+const geocode = require("./utils/geocode");
+const forecast = require("./utils/forecast");
+
 // console.log(__dirname);
 // console.log(path.join(__dirname, "../public"));
 // console.log(__filename);
@@ -42,6 +45,63 @@ app.get("/help", (req, res) => {
   });
 });
 
+app.get("/weather", (req, res) => {
+  if (!req.query.address) {
+    return res.send({
+      error: "You must provide an address.",
+    });
+  }
+
+  geocode(req.query.address, (error, { latitude, longitude, location }) => {
+    if (error) {
+      return res.send({ error });
+    }
+
+    forecast(latitude, longitude, (error, forecastData) => {
+      if (error) {
+        return res.send({ error });
+      }
+      res.send({
+        forecast: forecastData,
+        location,
+        address: req.query.address,
+      });
+    });
+  });
+
+  // res.send({
+  //   forecast: "It is snowing",
+  //   location: "Boston",
+  //   address: req.query.address,
+  // });
+
+  // console.log(req.query.address);
+  // res.send({
+  //   weather: [],
+  // });
+  //   res.send("Weather Page");
+});
+
+// app.get("/weather", (req, res) => {
+//   //   res.send("Weather Page");
+//   res.send({
+//     forecast: "It is snowing",
+//     location: "Boston",
+//   });
+// });
+
+app.get("/products", (req, res) => {
+  if (!req.query.search) {
+    return res.send({
+      error: "You must provide a serach term",
+    });
+  }
+
+  console.log(req.query.search);
+  res.send({
+    products: [],
+  });
+});
 app.get("/help/*", (req, res) => {
   // res.send("404 : Help Article Not Found !!");
   res.render("404", {
@@ -59,7 +119,6 @@ app.get("*", (req, res) => {
     errorMessage: "Page Not Found",
   });
 });
-
 // Handling non matching request from the client
 // app.use((req, res, next) => {
 //   res.status(404).send("<h1>Page not found on the server</h1>");
@@ -95,14 +154,6 @@ app.get("*", (req, res) => {
 
 // app.get("/about", (req, res) => {
 //   res.send("<h1>About Page</h1>");
-// });
-
-// app.get("/weather", (req, res) => {
-//   //   res.send("Weather Page");
-//   res.send({
-//     forecast: "It is snowing",
-//     location: "Boston",
-//   });
 // });
 
 app.listen(8000, () => {
