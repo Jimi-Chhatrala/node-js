@@ -1,0 +1,8 @@
+https://www.mongodb.com/try/download/community
+
+C:\Users\hnchh\mongodb\bin>mongod.exe --dbpath=\Users\hnchh\mongodb-data
+
+https://www.filehorse.com/download-robo-3t-robomongo/download/
+
+https://studio3t.com/download/?utm_source=april-2022&utm_medium=welcomepage&utm_campaign=inapp-robo3t
+
